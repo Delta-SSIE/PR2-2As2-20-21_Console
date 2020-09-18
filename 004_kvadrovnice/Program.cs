@@ -29,7 +29,8 @@ namespace _004_kvadrovnice
             {
                 double x = -b / (2 * a);
                 Console.WriteLine($"Rovnice {a}.x^2 + {b}.x + {c} = 0 má dvojnásobný kořen {x}.");
-            } else if (D >= 0)
+            } 
+            else if (D >= 0)
             {
                 double x1 = (-b + Math.Sqrt(D)) / (2 * a);
                 double x2 = (-b - Math.Sqrt(D)) / (2 * a);
