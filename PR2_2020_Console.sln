@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_Class_Demo", "01_Class_Demo\001_Class_Demo.csproj", "{090C8AD6-980A-4042-94E9-FE0749C55B98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "001_Class_Demo", "01_Class_Demo\001_Class_Demo.csproj", "{090C8AD6-980A-4042-94E9-FE0749C55B98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_Datetime_demo", "002_Datetime_demo\002_Datetime_demo.csproj", "{3241FE69-E34E-4A18-8EC5-2113FA0297C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "002_Datetime_demo", "002_Datetime_demo\002_Datetime_demo.csproj", "{3241FE69-E34E-4A18-8EC5-2113FA0297C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003_Arrays_demo_1_indices", "003_Arrays_demo_1_indices\003_Arrays_demo_1_indices.csproj", "{3D03D81E-0B67-470C-88EF-B987A609E618}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "003_Arrays_demo_1_indices", "003_Arrays_demo_1_indices\003_Arrays_demo_1_indices.csproj", "{3D03D81E-0B67-470C-88EF-B987A609E618}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004_kvadrovnice", "004_kvadrovnice\004_kvadrovnice.csproj", "{057CBCCE-8301-415D-8B4A-06252BC34785}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "004_kvadrovnice", "004_kvadrovnice\004_kvadrovnice.csproj", "{057CBCCE-8301-415D-8B4A-06252BC34785}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-01-pocet_zapornych", "test-01-pocet_zapornych\test-01-pocet_zapornych.csproj", "{A6DEB545-DE20-46A7-9F3E-B89D98FA30B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-02-vsechna_suda", "test-02_vsechna_suda\test-02-vsechna_suda.csproj", "{72CF019C-6344-438D-A8B2-E81CFE5F2C45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-03-JizdniRad", "test-03-JizdniRad\test-03-JizdniRad.csproj", "{EB21B8C3-FBB9-4BA2-A22D-03497313ADED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{057CBCCE-8301-415D-8B4A-06252BC34785}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{057CBCCE-8301-415D-8B4A-06252BC34785}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{057CBCCE-8301-415D-8B4A-06252BC34785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6DEB545-DE20-46A7-9F3E-B89D98FA30B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6DEB545-DE20-46A7-9F3E-B89D98FA30B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6DEB545-DE20-46A7-9F3E-B89D98FA30B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6DEB545-DE20-46A7-9F3E-B89D98FA30B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72CF019C-6344-438D-A8B2-E81CFE5F2C45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72CF019C-6344-438D-A8B2-E81CFE5F2C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72CF019C-6344-438D-A8B2-E81CFE5F2C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72CF019C-6344-438D-A8B2-E81CFE5F2C45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB21B8C3-FBB9-4BA2-A22D-03497313ADED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB21B8C3-FBB9-4BA2-A22D-03497313ADED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB21B8C3-FBB9-4BA2-A22D-03497313ADED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB21B8C3-FBB9-4BA2-A22D-03497313ADED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
