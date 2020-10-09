@@ -2,7 +2,7 @@
 
 namespace _007_Enum_DU_Mariasky
 {
-    enum Vyska : byte { sedma = 7, osma, devitka, destika, spodek, svrsek, kral, eso, filek = svrsek };
+    enum Vyska : byte { sedma = 7, osma, devitka, desitka, spodek, svrsek, kral, eso, filek = svrsek };
     class Program
     {
         static void Main(string[] args)
@@ -25,7 +25,6 @@ namespace _007_Enum_DU_Mariasky
                 Console.WriteLine("Obě karty jsou stejné ({0}).", karta1);
             else
                 Console.WriteLine("{1} je vyšší než {0}.", karta1, karta2);
-
 
         }
     }
