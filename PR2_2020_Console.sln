@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "012-OOP-Obdelnik-s-konstruk
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "001_Class_Demo", "001_Class_Demo\001_Class_Demo.csproj", "{DD1A996C-0D28-4943-8E09-658DEA518BFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "013-Trojuhelnik", "013-Trojuhelnik\013-Trojuhelnik.csproj", "{49C30C04-ADC3-413C-92EC-3E2F0D227917}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +109,10 @@ Global
 		{DD1A996C-0D28-4943-8E09-658DEA518BFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD1A996C-0D28-4943-8E09-658DEA518BFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD1A996C-0D28-4943-8E09-658DEA518BFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C30C04-ADC3-413C-92EC-3E2F0D227917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C30C04-ADC3-413C-92EC-3E2F0D227917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C30C04-ADC3-413C-92EC-3E2F0D227917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C30C04-ADC3-413C-92EC-3E2F0D227917}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -127,6 +133,7 @@ Global
 		{B21E3167-609A-47E1-B8D0-351A5FC97171} = {5ACED9E1-7570-4A51-B33A-B1109AAF47CC}
 		{C08E73A7-1A6E-4E99-BB04-B4D5BBCFF139} = {5ACED9E1-7570-4A51-B33A-B1109AAF47CC}
 		{DD1A996C-0D28-4943-8E09-658DEA518BFA} = {8710EC1E-1A25-4481-8098-7770C913BF60}
+		{49C30C04-ADC3-413C-92EC-3E2F0D227917} = {5ACED9E1-7570-4A51-B33A-B1109AAF47CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FBF02B8-2E8A-4202-AF54-A45A23E2FCAC}
