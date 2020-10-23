@@ -45,6 +45,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "013-Trojuhelnik", "013-Troj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "014-OOP-Obdelnik-s-vlastnostmi", "014-OOP-Obdelnik-s-vlastnostmi\014-OOP-Obdelnik-s-vlastnostmi.csproj", "{803BFB24-DDD5-4532-A3BD-2398F7BDBFDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "015-Kruznice-s-vlastnostmi", "015-Kruznice-s-vlastnostmi\015-Kruznice-s-vlastnostmi.csproj", "{F1AEF5F2-EC16-4935-8D79-FB824B41C23E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,10 @@ Global
 		{803BFB24-DDD5-4532-A3BD-2398F7BDBFDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{803BFB24-DDD5-4532-A3BD-2398F7BDBFDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{803BFB24-DDD5-4532-A3BD-2398F7BDBFDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1AEF5F2-EC16-4935-8D79-FB824B41C23E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1AEF5F2-EC16-4935-8D79-FB824B41C23E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1AEF5F2-EC16-4935-8D79-FB824B41C23E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1AEF5F2-EC16-4935-8D79-FB824B41C23E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -141,6 +147,7 @@ Global
 		{DD1A996C-0D28-4943-8E09-658DEA518BFA} = {8710EC1E-1A25-4481-8098-7770C913BF60}
 		{49C30C04-ADC3-413C-92EC-3E2F0D227917} = {5ACED9E1-7570-4A51-B33A-B1109AAF47CC}
 		{803BFB24-DDD5-4532-A3BD-2398F7BDBFDD} = {5ACED9E1-7570-4A51-B33A-B1109AAF47CC}
+		{F1AEF5F2-EC16-4935-8D79-FB824B41C23E} = {5ACED9E1-7570-4A51-B33A-B1109AAF47CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FBF02B8-2E8A-4202-AF54-A45A23E2FCAC}

@@ -54,14 +54,13 @@ namespace _014_OOP_Obdelnik_s_vlastnostmi
             StranaA = stranaA;
             StranaB = stranaB;
         }
-        public double Obvod()
+        public double Obvod
         {
-            return 2 * (_stranaA + _stranaB);
+            get 
+            { 
+                return 2 * (_stranaA + _stranaB);
+            }
         }
-        //public double Obsah()
-        //{
-        //    return _stranaA * _stranaB;
-        //}
         public double Obsah
         {
             get
