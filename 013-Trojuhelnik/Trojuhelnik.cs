@@ -11,6 +11,10 @@ namespace _013_Trojuhelnik
         private double _stranaC;
         public Trojuhelnik(double stranaA, double stranaB, double stranaC)
         {
+            if (!lzeSestavit(stranaA, stranaB, stranaC))
+            {
+                throw new System.ArgumentException("Neplatná kombinace délek");
+            }
             NastavA(stranaA);
             NastavB(stranaB);
             NastavC(stranaC);
@@ -23,7 +27,7 @@ namespace _013_Trojuhelnik
         {
             if (hodnota < 0)
                 throw new System.ArgumentOutOfRangeException();
-            else
+            else 
                 _stranaA = hodnota;
         }
         public double VratB()
@@ -60,6 +64,8 @@ namespace _013_Trojuhelnik
         private bool lzeSestavit(double a, double b, double c)
         {
             // vrátí true/false podle trojúhelníkové nerovnosti
+            return a + b > c && a + c > b && b + c > a;
+
         }
 
 
