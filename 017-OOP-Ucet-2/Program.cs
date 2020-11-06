@@ -54,7 +54,7 @@ namespace _017_OOP_Ucet_2
                 Console.WriteLine("Chyba při výběru. Zkontrolujte heslo.");
             }
 
-
+            Console.WriteLine(ucet.Log);
         }
     }
 }
