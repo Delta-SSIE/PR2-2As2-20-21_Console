@@ -6,38 +6,35 @@ namespace _016_OOP_Ucet
 {
     class Ucet
     {
-        private double _zustatek;
-        private string _vlastnik;
+        public double Zustatek { get; private set; }
+        public string Vlastnik { get; private set; }
 
-        public double Zustatek
-        {
-            get
-            {
-                return _zustatek;
-            }
-
-        }
         public Ucet(string vlastnik)
         {
-            _vlastnik = vlastnik;
-            _zustatek = 0;
+            Vlastnik = vlastnik;
+            Zustatek = 0;
         }
         public void Uloz(double castka)
         {
-            _zustatek += castka; 
+            Zustatek += castka; 
         }
         public bool Vyber(double castka)
         {
             //když na to mám
-            if (castka <= _zustatek)
+            if (castka <= Zustatek)
             {
-                _zustatek -= castka;
+                Zustatek -= castka;
                 return true;
             }
             else
             {
                 return false;
             }
+        }
+        public void Urokuj(double urokovaSazba)
+        {
+            double koeficient = 1 + urokovaSazba / 100;
+            Zustatek *= koeficient;
         }
     }
 }
