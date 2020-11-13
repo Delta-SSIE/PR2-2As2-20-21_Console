@@ -41,8 +41,16 @@ namespace _019_Geometrie
         { }//bez tohoto prázdného konstruktoru by nebylo možné vytvořit obdélník s ještě nedefinovanými stranami
         public Obdelnik(double stranaA, double stranaB)
         {
-            StranaA = _stranaA; //používáme vlastnost i zevnitř konstruktoru - zajistí kontrolu přípustnosti hodnoty
-            StranaB = _stranaB;
+            StranaA = stranaA; //používáme vlastnost i zevnitř konstruktoru - zajistí kontrolu přípustnosti hodnoty
+            StranaB = stranaB;
+        }
+        public Obdelnik(Bod roh1, Bod roh3)
+        {
+            double dx = roh1.x - roh3.x;
+            double dy = roh1.y - roh3.y;
+
+            StranaA = Math.Abs(dx);
+            StranaB = Math.Abs(dy);
         }
         public double Obsah()
         {
@@ -55,12 +63,21 @@ namespace _019_Geometrie
         public Bod PravyDolni(Bod levyHorni)
         {
             //sem vepište metodu, která dostane předán levý horní bod a vrátí pravý dolní bod
-
-            throw new NotImplementedException();
-            //tímto říkám, že když sem program dojde, má civilizovaně
-            //spadnout a říci "ještě není implementováno"
-            //
-            //až metodu implementujete, odstraňte
+            Bod vysledek = new Bod(levyHorni.x + StranaA, levyHorni.y - StranaB);
+            return vysledek;
+        }
+        public bool ObsahujeBod(Bod levyHorni, Bod dotazovany)
+        {
+            double dx = dotazovany.x - levyHorni.x;
+            double dy = levyHorni.y - dotazovany.y;
+            return dx >= 0
+                    && dx <= StranaA
+                    && dy >= 0
+                    && dy <= StranaB;
+        }
+        public override string ToString()
+        {
+            return $"Obdélník [{_stranaA}, {_stranaB}]";
         }
     }
 }

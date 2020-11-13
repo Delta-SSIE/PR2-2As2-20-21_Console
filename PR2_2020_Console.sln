@@ -55,8 +55,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "018-Kbeliky", "018-Kbeliky\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "019-Geometrie", "019-Geometrie\019-Geometrie.csproj", "{228F4A3A-FDA3-436F-BBC9-8E227ECC2238}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "020-Geometrie-hotovo", "020-Geometrie-hotovo\020-Geometrie-hotovo.csproj", "{E907B527-E7FA-41C4-8DEA-0EA16EDB5DDE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,10 +149,6 @@ Global
 		{228F4A3A-FDA3-436F-BBC9-8E227ECC2238}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{228F4A3A-FDA3-436F-BBC9-8E227ECC2238}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{228F4A3A-FDA3-436F-BBC9-8E227ECC2238}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E907B527-E7FA-41C4-8DEA-0EA16EDB5DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E907B527-E7FA-41C4-8DEA-0EA16EDB5DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E907B527-E7FA-41C4-8DEA-0EA16EDB5DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E907B527-E7FA-41C4-8DEA-0EA16EDB5DDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -182,7 +176,6 @@ Global
 		{4A0C42CA-B41D-4F64-844B-3661884F2725} = {5ACED9E1-7570-4A51-B33A-B1109AAF47CC}
 		{05809BFC-1E2D-4C42-9E68-B462A19870FC} = {5ACED9E1-7570-4A51-B33A-B1109AAF47CC}
 		{228F4A3A-FDA3-436F-BBC9-8E227ECC2238} = {5ACED9E1-7570-4A51-B33A-B1109AAF47CC}
-		{E907B527-E7FA-41C4-8DEA-0EA16EDB5DDE} = {5ACED9E1-7570-4A51-B33A-B1109AAF47CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FBF02B8-2E8A-4202-AF54-A45A23E2FCAC}
