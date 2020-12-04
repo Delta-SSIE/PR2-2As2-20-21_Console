@@ -18,5 +18,40 @@ namespace _21_Prvocisla
 
             return true; //vše doběhlo, nenašel jsem dělitele => dělitel není, vracím true (JE prvočíslo)
         }
+
+        public static int[] PrvocislaDo(int maximum)
+        {
+            //připrav si řadu čísel do maxima
+            bool[] cisla = new bool[maximum + 1];
+            List<int> prvocisla = new List<int>();
+
+            cisla[0] = false; //tohle určitě nebudou prvočísla
+            cisla[1] = false;
+
+            for (int i = 2; i < cisla.Length; i++)
+            {
+                cisla[i] = true; //nastavím jako podezřelé
+            }
+
+            //projdi ji takto:
+            for (int podezreleCislo = 2; podezreleCislo < cisla.Length; podezreleCislo++)
+            {
+                //škrtnutá čísla přeskoč
+                if (!cisla[podezreleCislo])
+                {
+                    continue;
+                }
+
+                //první neškrtnuté označ jako prvočíslo, jeho násobky škrtni
+                prvocisla.Add(podezreleCislo);
+
+                for (int nasobek = 2 * podezreleCislo; nasobek < cisla.Length; nasobek += podezreleCislo)
+                {
+                    cisla[nasobek] = false;
+                }
+            }
+
+            return prvocisla.ToArray();
+        }
     }
 }
