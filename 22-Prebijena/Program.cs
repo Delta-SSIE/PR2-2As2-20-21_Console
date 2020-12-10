@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace _22_Prebijena
 {
@@ -32,6 +33,47 @@ namespace _22_Prebijena
             //{
             //    Console.WriteLine($"{jedna} je vyšší než {dva}");
             //}
+
+
+            /* Ukázka fronty */
+            //Queue<int> fronta = new Queue<int>();
+
+            //fronta.Enqueue(5);
+            //fronta.Enqueue(12);
+            //fronta.Enqueue(-7);
+
+            //int cislo = fronta.Dequeue();
+            //Console.WriteLine(cislo);
+
+            ////Console.WriteLine(fronta.Count); //2 - fronta se zkrátila
+
+            //cislo = fronta.Peek();
+            //Console.WriteLine(cislo);
+
+            //cislo = fronta.Dequeue();
+            //Console.WriteLine(cislo);
+
+            //cislo = fronta.Dequeue();
+            //Console.WriteLine(cislo);
+
+            ////cislo = fronta.Dequeue();//chyba - není kde brát
+            ////Console.WriteLine(cislo);
+
+
+            /* test balíčku */
+            Balicek paklik = new Balicek();
+            //paklik.DejDospod(new Karta(VyskaKarty.Desitka, BarvaKarty.Kule));
+            //paklik.DejDospod(new Karta(VyskaKarty.Eso, BarvaKarty.Srdce)); 
+            //paklik.DejDospod(new Karta(VyskaKarty.Spodek, BarvaKarty.Zaludy));
+            //paklik.DejDospod(new Karta(VyskaKarty.Osma, BarvaKarty.Kule));
+
+            //Console.WriteLine(paklik.VezmiKartu());
+
+            //Console.WriteLine();
+
+            paklik.Napln();
+
+            paklik.Vypis();
 
         }
     }
