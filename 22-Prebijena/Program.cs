@@ -61,7 +61,7 @@ namespace _22_Prebijena
 
 
             /* test balíčku */
-            Balicek paklik = new Balicek();
+            //Balicek paklik = new Balicek();
             //paklik.DejDospod(new Karta(VyskaKarty.Desitka, BarvaKarty.Kule));
             //paklik.DejDospod(new Karta(VyskaKarty.Eso, BarvaKarty.Srdce)); 
             //paklik.DejDospod(new Karta(VyskaKarty.Spodek, BarvaKarty.Zaludy));
@@ -71,9 +71,18 @@ namespace _22_Prebijena
 
             //Console.WriteLine();
 
-            paklik.Napln();
+            //paklik.Napln();
+            //paklik.Zamichej();
 
-            paklik.Vypis();
+            //paklik.Vypis();
+
+            Hra hra = new Hra();
+            hra.Rozdej();
+            while (!hra.JeKonec)
+            {
+                hra.Kolo();
+            }
+            hra.VypisVysledek();
 
         }
     }

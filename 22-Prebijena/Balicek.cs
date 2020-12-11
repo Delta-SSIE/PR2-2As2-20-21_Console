@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace _22_Prebijena
@@ -31,6 +32,13 @@ namespace _22_Prebijena
         }
 
         //Zamíchej
+        public void Zamichej()
+        {
+            Random rnd = new Random();
+            Karta[] tmpKarty = _karty.ToArray();
+            tmpKarty = tmpKarty.OrderBy(i => rnd.NextDouble()).ToArray();
+            _karty = new Queue<Karta>(tmpKarty);
+        }
 
 
         //Vezmi horní kartu
@@ -39,7 +47,7 @@ namespace _22_Prebijena
             return _karty.Dequeue();
         }
 
-        //Dej karetu dospod
+        //Dej kartu dospod
         public void DejDospod(Karta karta)
         {
             _karty.Enqueue(karta);
