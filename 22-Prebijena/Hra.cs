@@ -21,7 +21,11 @@ namespace _22_Prebijena
         public void Rozdej()
         {
             Balicek vsechnyKarty = new Balicek();
+            vsechnyKarty.Napln();
             vsechnyKarty.Zamichej();
+
+            _hracA = new Balicek();
+            _hracB = new Balicek();
 
             //_hracA = new Balicek();
             //for (int i = 0; i < 16; i++)
@@ -55,12 +59,21 @@ namespace _22_Prebijena
             while (vysledek == Porovnani.ObeStejne && !JeKonec) { 
 
                 Karta kartaA = _hracA.VezmiKartu();
-                vylozeno.Add(kartaA);
                 Console.WriteLine($"Hráč A nese {kartaA}");
 
                 Karta kartaB = _hracB.VezmiKartu();
-                vylozeno.Add(kartaB);
                 Console.WriteLine($"Hráč B nese {kartaB}");
+
+                if (rnd.Next(0, 2) == 0) { 
+                    vylozeno.Add(kartaA);
+                    vylozeno.Add(kartaB);
+                } 
+                else
+                {
+                    vylozeno.Add(kartaB);
+                    vylozeno.Add(kartaA);
+
+                }
 
                 vysledek = kartaA.SrovnejS(kartaB);
 
