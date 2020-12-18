@@ -40,7 +40,7 @@ namespace _24_Bludiste_Dictionary
             bludiste.Add('U', new char[] { 'C', 'G', 'P' });
             bludiste.Add('V', new char[] { 'Ě', 'L', 'Ř' });
             bludiste.Add('W', new char[] { 'Č', 'I', 'Q' });
-            bludiste.Add('Z', new char[] { 'D', 'K', 'Z' });
+            bludiste.Add('Z', new char[] { 'D', 'K', 'Ž' });
             bludiste.Add('Ž', new char[] { 'P', 'Ř' });
 
             //piš si ke každému rozcestí, v kolikátém kroku ses sem dostal
@@ -111,7 +111,7 @@ namespace _24_Bludiste_Dictionary
                 }
             }
 
-            cesta.Reverse();
+            cesta.Reverse(); //aby nebyla od cíle do startu
 
             foreach(char misto in cesta)
                 Console.Write(misto);
