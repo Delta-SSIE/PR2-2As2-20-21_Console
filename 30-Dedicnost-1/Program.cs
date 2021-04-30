@@ -22,9 +22,8 @@ namespace _30_Dedicnost_1
             Savec s1 = new Kun();
             //Savec s1 = new Velryba();
             // s1.Cvalej(); - nelze, není na savci deklarováno, i když je to vlastné kůň "uvnitř"
-            Kun konik = (Kun) s1; //type casting, type juggling
-            konik.Cvalej();
-
+            Kun konik = (Kun)s1; //type casting, type juggling, lze protože s1 opravdu je kůň
+            konik.Cvalej(); //teď lze cválat, protože propměnná konik má deklarován typ Kun, ktery obsahuje metodu Cvalej
 
         }
     }
