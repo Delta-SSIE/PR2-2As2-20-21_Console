@@ -29,6 +29,12 @@ namespace _30_Dedicnost_2
             Console.WriteLine("Klapity klap");
         }
 
+        public override void OzviSe()
+        {
+            Console.WriteLine("Íhahá");
+            Vek++;
+        }
+
     }
 
 }

@@ -11,7 +11,7 @@ namespace _33_Eye_colour
     class Person
     {
         private static Random random = new Random();
-        public Person(Sex sex, Colour gene1, Colour gene2)
+        private Person(Sex sex, Colour gene1, Colour gene2)
         {
             Sex = sex;
             Gene1 = gene1;
@@ -47,8 +47,9 @@ namespace _33_Eye_colour
             int brownEyes = people.Length - blueEyes;
 
             Console.WriteLine($"{people.Length} people, {getMales(people).Length} males, {getFemales(people).Length} females");
-            Console.WriteLine($"Genes: {blueGenes} blue : {brownGenes} brown ({((double)blueGenes)/people.Length} : {((double)brownGenes) / people.Length}) ");
-            Console.WriteLine($"Eyes: {blueEyes} blue : {brownEyes} brown ({((double)blueEyes) /people.Length} : {((double)brownEyes) / people.Length}) ");
+            Console.WriteLine($"Genes: {blueGenes} blue : {brownGenes} brown ({((double)blueGenes)/ brownGenes} : 1) ");
+            Console.WriteLine($"Eyes: {blueEyes} blue : {brownEyes} brown ({((double)blueEyes) / brownEyes} : 1) ");
+            Console.WriteLine();
         }
 
         private static Person[] getMales (Person[] people)
@@ -99,14 +100,72 @@ namespace _33_Eye_colour
         //private static int getBlueEyes(Person[] people) => people.Where(x => x.Eyes == Colour.Blue).Count();
 
 
-        private static Person[] SetPopulation(int count, double blueGeneRatio)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="count">Population size</param>
+        /// <param name="blueGeneRatio">Double between 0 and 1</param>
+        /// <returns></returns>
+        public static Person[] SetPopulation(int count, double blueGeneRatio)
         {
-            throw new NotImplementedException();
+            Person[] population = new Person[count];
+            for (int i = 0; i < count; i++)
+            {
+                Sex sex;
+                if (random.Next(2) == 0) //vyrobí číslo 0 nebo 1
+                    sex = Sex.Male;
+                else
+                    sex = Sex.Female;
+
+                //nebo
+                //Sex sex = (random.Next(2) == 0) ? sex = Sex.Male : sex = Sex.Female;
+
+                Colour gene1;
+                if (random.NextDouble() < blueGeneRatio) //vyrobí desetinné číslo mezi 0 a 1
+                    gene1 = Colour.Blue;
+                else
+                    gene1 = Colour.Brown;
+
+
+                //Colour gene1 = random.NextDouble() < blueGeneRatio ? Colour.Blue : Colour.Brown;
+
+                Colour gene2 = random.NextDouble() < blueGeneRatio ? Colour.Blue : Colour.Brown;
+
+
+                population[i] = new Person(sex, gene1, gene2);
+            }
+            return population;
         }
 
-        private static Person[] NextGeneration(Person[] oldGeneration, double averageKidsPerPair)
+        public static Person[] NextGeneration(Person[] oldGeneration, double averageKidsPerPair)
         {
-            throw new NotImplementedException();
+            //vytvořit sadu párů
+            Person[] males = getMales(oldGeneration);
+            Person[] females = getFemales(oldGeneration);
+
+            males = males.OrderBy(x => random.NextDouble()).ToArray(); //náhodné pořadí
+            females = females.OrderBy(x => random.NextDouble()).ToArray(); //náhodné pořadí
+
+            int pairCount = Math.Min(males.Length, females.Length);
+
+
+            //spočítám, kolik má být dětí
+            int kidsCount = (int) Math.Round(pairCount * averageKidsPerPair);
+
+
+            //pro každé dítě náhodně vyberu pár a vytvořím nového potomka
+            Person[] nextGeneration = new Person[kidsCount];
+            for (int i = 0; i < kidsCount; i++)
+            {
+                //vzít náhodný pár
+                int pairIndex = random.Next(pairCount);
+                Person father = males[pairIndex];
+                Person mother = females[pairIndex];
+
+                nextGeneration[i] = new Person(father, mother);
+            }
+
+            return nextGeneration;
         }
     }
 }

@@ -6,18 +6,15 @@ using System.Threading.Tasks;
 
 namespace _30_Dedicnost_2
 {
-    class Velryba : Savec
+    sealed class Pes : Savec
     {
-
-        public Velryba(string jmeno) : base(jmeno) { }
-
-        public void Plav()
+        public Pes(string jmeno) : base(jmeno)
         {
-            Console.WriteLine("Nechávám za sebou na hladině čáru.");
         }
+
         public override void OzviSe()
         {
-            Console.WriteLine("Huíhuíhuí");
+            Console.WriteLine("Haf!");
         }
     }
 }

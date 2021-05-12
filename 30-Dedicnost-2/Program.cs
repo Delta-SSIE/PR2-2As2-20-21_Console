@@ -14,13 +14,14 @@ namespace _30_Dedicnost_2
             Kun dan = new Kun("Daniel", ferda, linda);
 
 
-            ferda.Cvalej();
-            ferda.Dychej();
-            Console.WriteLine(ferda.Jmeno);
-            Console.WriteLine($"{ferda.Jmeno} ({ferda.Otec}, {ferda.Matka})");
+            //ferda.Cvalej();
+            //ferda.Dychej();
+            //Console.WriteLine(ferda.Jmeno);
+            //Console.WriteLine($"{ferda.Jmeno} ({ferda.Otec}, {ferda.Matka})");
 
-            Console.WriteLine();
-            Console.WriteLine($"{dan.Jmeno} ({dan.Otec}, {dan.Matka})");
+
+            //Console.WriteLine();
+            //Console.WriteLine($"{dan.Jmeno} ({dan.Otec}, {dan.Matka})");
 
 
             //Velryba mobyDick = new Velryba();
@@ -35,6 +36,33 @@ namespace _30_Dedicnost_2
             //Kun konik = (Kun)s1; //type casting, type juggling, lze protože s1 opravdu je kůň
             //konik.Cvalej(); //teď lze cválat, protože propměnná konik má deklarován typ Kun, ktery obsahuje metodu Cvalej
 
+
+            //Savec savec = new Savec("Bobík"); //nelze - savec je abstraktní
+            //savec.Dychej();
+
+            Velryba mobyDick = new Velryba("Moby Dick");
+            //mobyDick.Dychej();
+            //mobyDick.Plav();
+
+            //Savec savec = mobyDick;
+            //savec.OzviSe();
+            //savec = dan;
+            //savec.OzviSe();
+
+            //mobyDick.Cvalej(); // nelze - není deklarováno
+
+
+            //ukázka polymorfizmu
+            Savec[] savci = new Savec[3];
+            savci[0] = new Kun("Ferda", "John", "Linda");
+            savci[1] = new Velryba("Billie");
+            savci[2] = new Pes("Punťa");
+
+            foreach (Savec potvora in savci)
+            {
+                potvora.OzviSe();
+                //Console.WriteLine(potvora.Vek);
+            }
         }
     }
 }

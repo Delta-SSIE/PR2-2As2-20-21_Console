@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace _30_Dedicnost_2
 {
-    class Savec
+    abstract class Savec
     {
         public string Jmeno { get; private set; }
+
+        //public abstract int Vek { get; set; } //abstraktní mohou být i vlastnosti
+
+        protected int Vek = 0; //protected přístupné v této a dědících třídách, nepřístupné z venku
 
         public Savec(string jmeno)
         {
@@ -29,5 +33,6 @@ namespace _30_Dedicnost_2
             Console.WriteLine("To je dobrota...");
         }
 
+        public abstract void OzviSe(); //abstraktní metoda
     }
 }
