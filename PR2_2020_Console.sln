@@ -89,9 +89,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "32-Obdelnik-a-ctverec", "32
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "33-Eye-colour", "33-Eye-colour\33-Eye-colour.csproj", "{65B28162-62B3-4831-980A-59607581292F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "34-Dedicnost-utvary", "34-Dedicnost-utvary\34-Dedicnost-utvary.csproj", "{49749228-4C13-4A6F-BC9A-FE9C4F240605}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "34-Dedicnost-utvary", "34-Dedicnost-utvary\34-Dedicnost-utvary.csproj", "{49749228-4C13-4A6F-BC9A-FE9C4F240605}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "35-Dedicnost-Dopravni-prostredky", "35-Dedicnost-Dopravni-prostredky\35-Dedicnost-Dopravni-prostredky.csproj", "{765F27FB-6D67-47C9-A35B-88C9610F450C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "35-Dedicnost-Dopravni-prostredky", "35-Dedicnost-Dopravni-prostredky\35-Dedicnost-Dopravni-prostredky.csproj", "{765F27FB-6D67-47C9-A35B-88C9610F450C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "36-Iface-demo", "36-Iface-demo\36-Iface-demo.csproj", "{E995E83F-5252-4B7B-A59F-E04654A2EA17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -251,6 +253,10 @@ Global
 		{765F27FB-6D67-47C9-A35B-88C9610F450C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{765F27FB-6D67-47C9-A35B-88C9610F450C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{765F27FB-6D67-47C9-A35B-88C9610F450C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E995E83F-5252-4B7B-A59F-E04654A2EA17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E995E83F-5252-4B7B-A59F-E04654A2EA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E995E83F-5252-4B7B-A59F-E04654A2EA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E995E83F-5252-4B7B-A59F-E04654A2EA17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -293,6 +299,7 @@ Global
 		{65B28162-62B3-4831-980A-59607581292F} = {DA21FFFC-4948-4860-B225-11AAE315471A}
 		{49749228-4C13-4A6F-BC9A-FE9C4F240605} = {DA21FFFC-4948-4860-B225-11AAE315471A}
 		{765F27FB-6D67-47C9-A35B-88C9610F450C} = {DA21FFFC-4948-4860-B225-11AAE315471A}
+		{E995E83F-5252-4B7B-A59F-E04654A2EA17} = {DA21FFFC-4948-4860-B225-11AAE315471A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FBF02B8-2E8A-4202-AF54-A45A23E2FCAC}

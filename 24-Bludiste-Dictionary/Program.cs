@@ -43,6 +43,12 @@ namespace _24_Bludiste_Dictionary
             bludiste.Add('Z', new char[] { 'D', 'K', 'Ž' });
             bludiste.Add('Ž', new char[] { 'P', 'Ř' });
 
+            foreach (var item in bludiste)
+            {
+                Console.WriteLine(item.Key + ": " + String.Join(", ", item.Value));
+            }
+            return;
+
             //piš si ke každému rozcestí, v kolikátém kroku ses sem dostal
             Dictionary<char, byte> kroky = new Dictionary<char, byte>();
 
